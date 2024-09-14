@@ -1,0 +1,67 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.contanier{
+    display: grid;
+    gap: 10px;
+    /* grid-template-columns: repeat(6, 1fr); */
+    /* grid-template-rows: repeat(4,1fr); */
+    grid-template-areas: 
+    'header header header'
+    'main main main'
+    'hero hero hero'
+    'feature sidebar sidebar'
+    'testimonial sidebar sidebar'
+    'footer footer footer';
+
+}
+.header{
+    grid-area: header;
+    color: #fff;
+    background: black;
+    text-align: center;
+    padding: 20px;
+}
+.main{
+    grid-area: main;
+    background-color: gray;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+
+}
+.hero{
+    grid-area: hero;
+    background:rgb(212, 210, 210);
+    text-align: center;
+    padding: 30px;
+
+}
+.feature{
+    grid-area: feature;
+    background: rgb(172, 172, 172);
+    height: 80px;
+    padding-left: 10px;
+    padding-top: 10px;
+}
+.sidebar{
+    grid-area: sidebar;
+    background:rgb(212, 210, 210);
+    padding-left: 10px;
+    padding-top: 10px;
+}
+.testimonial{
+    grid-area: testimonial;
+    background: rgb(172, 172, 172);
+    height: 80px;
+    padding-left: 10px;
+    padding-top: 10px;
+}
+.footer{
+    grid-area: footer;
+    color: #fff;
+    text-align: center;
+    background: black;
+    padding: 20px;
+}

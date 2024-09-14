@@ -1,0 +1,77 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.conteint{
+    display: grid;
+    /* gap: 10px; */
+    grid-template-columns: 1fr 2fr;
+    grid-template-areas: 
+    'header header header'
+    'navigation navigation navigation'
+    'search main main'
+    'related comment comment'
+    'footer footer footer';
+}
+.header{
+    grid-area: header;
+    text-align: center;
+    background: black;
+    padding: 20px;
+    color: #fff;
+}
+.navigation{
+    grid-area: navigation;
+    background: gray;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    margin-top: 10px;
+}
+.group{
+    background-color: rgb(227, 219, 219);
+    height: 200px;
+    padding-top: 5px;
+    margin-top: 10px;
+}
+.search{
+    grid-area: search;
+    background: rgb(227, 225, 225) ;
+    height: 70px;
+    margin: 10px;
+    padding-left: 10px ;
+    padding-top: 10px;
+}
+.main{
+    grid-area: main;
+    background-color: rgb(227, 219, 219);
+    height: 70px;
+    padding-left: 10px ;
+    padding-top: 10px;
+}
+.comment{
+    grid-area: comment;
+    padding-left: 10px ;
+    padding-top: 10px;
+    background: rgb(190, 189, 189);
+    height: 95px;
+}
+.related{
+    grid-area: related;
+    background: rgb(190, 189, 189);
+    height: 70px;
+    margin: 10px;
+    padding-left: 10px ;
+    padding-top: 10px;
+}
+.footer{
+    grid-area: footer;
+    text-align: center;
+    background: black;
+    padding: 20px;
+    color: #fff;
+}
+.row{
+    margin-top: 10px;
+    margin-left: 10px;
+}
